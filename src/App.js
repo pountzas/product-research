@@ -27,7 +27,9 @@ function App() {
     setIsLoading(true);
 
     setTimeout(() => {
-      url === 'https://www.amazon.com/One-Womens-Petite-Multivitamins-Count/dp/B004XSOJ02' ? setValidProduct(true) : setIncorrectUrl(true);
+      url === 'https://www.amazon.com/One-Womens-Petite-Multivitamins-Count/dp/B004XSOJ02'
+        ? setValidProduct(true)
+        : setIncorrectUrl(true);
       setIsLoading(false);
     }, 2000);
   };
@@ -74,7 +76,7 @@ function App() {
                 />
               </form>
 
-              {incorrectUrl || (asinValid && validProduct) ?
+              {incorrectUrl || asinInvalid || (asinValid && validProduct) ?
                 <form onSubmit={checkAsin}>
                   <input
                     disabled={!incorrectUrl}

@@ -8,7 +8,7 @@ const ProductInfo = () => {
       <div className='flex space-x-8 items-center'>
         <AiFillCheckCircle className='text-[#14BF27] text-5xl' />
         <div className=''>
-          <p className='font-bold'>This is a valid product</p>
+          <p className='font-bold text-sm'>Cherry Plus Concentrate</p>
           <p className='text-[#14BF27] font-bold'>This is a valid product</p>
         </div>
       </div>
